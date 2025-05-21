@@ -1,0 +1,92 @@
+:root{
+    --body_font-family: "Sofia Sans", sans-serif;
+    --heading-font-family: "Roboto", sans-serif;
+    --primary-color:#ed254e;
+    --secondary-color:#f38155 ;
+    --accent1-color:#f6af59;
+    --accent2-color:#c2eabd;
+    --accen3-color: #011936;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--body_font-family);
+    color: var(--accen3-color);
+}
+
+h1{
+    font-family: var(--heading-font-family);
+}
+
+header{
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+}
+
+header,main,footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+h1,h2,h3 {
+    font-family: var(--heading-font-family);
+    color: var(--primary-color);
+}
+
+nav, p, section, article {
+  margin: 16px;
+  padding: 8px;
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+h1 {
+    position: absolute;
+    background-color: var(--accent1-color);
+    top: 30px;
+    color: white;
+    opacity: 0.8;
+    text-align: center;
+    width: 100%;
+    padding: 16px;
+
+}  
+
+.hero article {
+    position: absolute;
+    width: 90%;
+    top: 230px;
+    left: 25px;
+    background-color: var(--secondary-color);
+    padding: 0;
+    border-radius: 15px;
+    opacity: 0.8;
+    
+
+}
+
+
+.hero article img{
+    float: right;
+    width: 150px;
+    margin-top: 10px;
+    border: 1px solid blue;
+    border-radius: 10px;
+}
