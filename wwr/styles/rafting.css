@@ -26,12 +26,75 @@ h1{
 header{
     background-color: var(--primary-color);
     color: var(--accent2-color);
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+   
+    
 }
 
+header img{
+    width: 150px;
+    margin: 10px 0 10px 10px;
+}
+
+
+.navi-links ul{
+    display: flex;
+    justify-content: space-around;
+    
+
+}
+
+.navi-links ul li{
+    list-style-type: none;
+    background-color: #f2f8f1cc;
+}
+
+
+.section-1 h2 {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.section-1 {
+    display: flex;
+    align-items: center;
+}
+
+.section-1 img{
+    object-fit: cover;
+    width: 300px;
+    align-items: self-start;
+    justify-content: center;
+}
+
+.section-2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+    margin-top: 70px;
+    
+}
+
+.section-2 img{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 5px;
+
+}
+
+.section-2 h2{
+    position: absolute;
+    top: 1190px;
+    left: 520px;
+}  
+/* 
 header,main,footer {
     width: 840px;
     margin: 0 auto;
-}
+} */
 
 h1,h2,h3 {
     font-family: var(--heading-font-family);
@@ -72,7 +135,7 @@ h1 {
 .hero article {
     position: absolute;
     width: 90%;
-    top: 230px;
+    top: 240px;
     left: 25px;
     background-color: var(--secondary-color);
     padding: 0;
@@ -94,3 +157,30 @@ h1 {
 .hero h1 {
     text-shadow: 20px 2px 9px #000;
 }
+
+.foot {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(200px,1fr));
+    align-items: center;
+    padding-left: 450px;
+    
+}
+
+.foot ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: flex-end;
+}
+
+.foot li{
+    margin: 7px;
+}
+
+/* .socialmedia ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: end;
+} *
+ 
+
+
