@@ -70,21 +70,18 @@ header img{
     color: black;
 }
 .section-1 {
-    display: flex;
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr;
     align-items: center;
     border: 2px solid black;
     justify-content: center;
-    margin: auto;
     padding-top: 25px;
-}
-
-.section-1 .image{
-    margin: 5px;
 }
 
 .section-1 img{
     object-fit: cover;
-    width: 250px;
+    width: 90%;
+    height: auto;
     justify-content: center;
 }
 
