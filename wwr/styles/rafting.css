@@ -1,10 +1,10 @@
 :root{
     --body_font-family: "Sofia Sans", sans-serif;
     --heading-font-family: "Roboto", sans-serif;
-    --primary-color:#ed254e;
+    --primary-color:#df8e9e;
     --secondary-color:#f38155 ;
     --accent1-color:#f6af59;
-    --accent2-color:#c2eabd;
+    --accent2-color:#89e07e;
     --accen3-color: #011936;
 }
 
@@ -23,58 +23,78 @@ h1{
     font-family: var(--heading-font-family);
 }
 
+/* -------------------header---------------- */
 header{
-    background-color: var(--primary-color);
-    color: var(--accent2-color);
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns:1fr 1fr;
     align-items: center;
-   
-    
+    justify-content: center;
+    background-color: var(--accent2-color);
+    border: 2px solid black;
 }
 
-header img{
-    width: 150px;
-    margin: 10px 0 10px 10px;
+header,main,footer{
+     margin: 7px;
 }
-
 
 .navi-links ul{
     display: flex;
-    justify-content: space-around;
-    
-
+    flex-flow: row wrap;
+    font-size: 150%;
+    /* justify-content: space-around; */
 }
 
 .navi-links ul li{
-    list-style-type: none;
-    background-color: #f2f8f1cc;
+    list-style: none;
+    display: inline-block;
+    padding: 7px;
+    margin: 5px;
 }
 
+.navi-links ul li a{
+    text-decoration: none;
+    background-color: white;
+}
 
-.section-1 h2 {
+header img{
+    width: 35%;
+    margin: 10px 0 19px 25%;
+    border: 2px solid black;
+}
+
+.h3 {
     text-align: center;
-    margin-bottom: 35px;
+    position: relative;
+    top: 29px;
+    font-size: 25px;
+    color: black;
 }
-
 .section-1 {
     display: flex;
     align-items: center;
+    border: 2px solid black;
+    justify-content: center;
+    margin: auto;
+    padding-top: 25px;
+}
+
+.section-1 .image{
+    margin: 5px;
 }
 
 .section-1 img{
     object-fit: cover;
-    width: 300px;
-    align-items: self-start;
+    width: 250px;
     justify-content: center;
 }
 
 .section-2 {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr;
     gap: 10px;
-    margin-top: 70px;
-    
+    border: 2px solid black;
+    padding: 20px;   
+    padding-top: 70px; 
 }
 
 .section-2 img{
@@ -85,25 +105,28 @@ header img{
 
 }
 
-.section-2 h2{
-    position: absolute;
-    top: 1190px;
-    left: 520px;
-}  
+h2{
+    text-align: center;
+    position: relative;
+    top: 55px;
+    color: black;
+}
+
+
 /* 
 header,main,footer {
     width: 840px;
     margin: 0 auto;
 } */
 
-h1,h2,h3 {
+/* h1,h3 {
     font-family: var(--heading-font-family);
     color: var(--primary-color);
-}
+} */
 
 nav, p, section, article {
-  margin: 16px;
-  padding: 8px;
+  margin: 0px;
+  padding: 5px;
 }
 
 .socialmedia a {
@@ -112,6 +135,9 @@ nav, p, section, article {
 
 .hero {
     position: relative;
+    /* background-color: aqua; */
+    border: 2px solid black;
+    margin: 1px;
 }
 
 .hero img {
@@ -122,33 +148,36 @@ nav, p, section, article {
 
 h1 {
     position: absolute;
-    background-color: var(--accent1-color);
+    /* background-color: var(--accent1-color); */
     top: 30px;
     color: white;
     opacity: 0.8;
     text-align: center;
     width: 100%;
-    padding: 16px;
+    padding: 10px;
+    font-weight: 900;
+    font-size: 37px;
 
 }  
 
 .hero article {
     position: absolute;
-    width: 90%;
-    top: 240px;
-    left: 25px;
-    background-color: var(--secondary-color);
-    padding: 0;
+    top: 120px;
+    left: 55px;
+    right: 25px;
+    /* background-color: var(--primary-color); */
     border-radius: 15px;
-    opacity: 0.8;
-    
-
+    opacity: 0.9;
+    height: auto;
+    font-weight: 700;
+    color: white;
 }
+
 
 
 .hero article img{
     float: right;
-    width: 150px;
+    width: 17%;
     margin-top: 10px;
     border: 1px solid blue;
     border-radius: 10px;
@@ -160,21 +189,43 @@ h1 {
 
 .foot {
     display: grid;
-    grid-template-columns: repeat(2, minmax(200px,1fr));
+    grid-template-columns: 2fr 1fr;
+    background-color: hsl(120, 85%, 82%);
+    border: 2px solid black;
     align-items: center;
-    padding-left: 450px;
-    
+    justify-content: center;
 }
 
-.foot ul {
+
+
+.foot ul{
     display: flex;
-    list-style-type: none;
     justify-content: flex-end;
+    list-style-type: none;
+    justify-content: space-around;
 }
 
 .foot li{
-    margin: 7px;
+    width: 18%; 
+    height: auto;
+
 }
+
+.foot img{
+    width: 90%;
+
+}
+
+.foot .copyright{
+    padding: 50px 70px 20px  10px;
+    text-align: center;
+    text-align: end;
+    
+}
+
+
+
+
 
 /* .socialmedia ul{
     display: flex;
