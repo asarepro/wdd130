@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WDD 130 | HTML Form - User Poll</title>
+  <link rel="stylesheet" href="styles/poll-form.css">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@410&family=Roboto:wght@370&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+  <h1>WDD 130 | Asare Jeffrey | HTML Form - User Poll</h1>
+</header>
+<main>
+    <form action="">
+        <fieldset>
+            <legend>Contact Information</legend>
+            <div class="form-item  column2">
+            <label for="fullname">Fullname:</label>
+            <input type="text" name="fullname" id="fullname"> 
+            </div>
+            <div class="form-item  column2">
+            <label for="useremail">Email:</label>
+             <input type="email" name="useremail" id="useremail">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Questions</legend>
+            <div class="form-item column1"></div>
+            <label for="browser">What is your favorite browser?</label>
+            <select name="browser" id="browser">
+                <option value="chrome">chrome</option>
+                <option value="edge">Edge</option>
+                <option value="firefox">Firefox</option>
+                <option value="safari">Safari</option>
+                <option value="others">Others</option>
+            </select> 
+            </div> <br>
+            <div class="form-item column1">
+            <label for="pet">Do you have a household pet?</label>
+            <input type="checkbox" name="pet" id="pet">
+            </div> <br>
+            <label for="places">List the places you have lived</label>
+            <textarea name="feedback" id="feedback" rows="4" placeholder="American,London,Washington..."></textarea><br>
+            <input type="submit" value="submit poll">
+        </fieldset>
+
+    </form>
+
+</main>
+<footer>
+  <p>©2025 | HTML Form - User Poll Activity | Asare Jeffrey</p>
+</footer>
+</body>
+</html>
