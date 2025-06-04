@@ -222,14 +222,134 @@ h1 {
 }
 
 
-
-
-
-/* .socialmedia ul{
-    display: flex;
-    list-style-type: none;
-    justify-content: end;
-} *
+/* ----------------------contact us------------------------- */
  
+.flex-1{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 40px 20px 60px;
+    /* background-color: rgba(66, 49, 85,0.7); */
+}
+
+.flex-1 img{
+    width: 300px;
+    height: auto;
+    border-radius: 50%;
+    margin: 10px;
+    object-fit: contain;
+    margin: 35px;
+    transition: 0.5s;
+}
+
+/* .flex-1 img:hover{
+    display: inline-block;
+    width: 320px;
+    height: auto;
+    border-radius: 5%;
+    transition: 0.5s;
+    object-fit: cover;
+} */
 
 
+div figcaption{
+    text-align: center;
+}
+
+.sect_2{
+    display: grid;
+    grid-template-columns:repeat(2,minmax(200px,1fr));
+    gap: 10px;
+    margin-top: 50px;
+}
+
+.sect_2 .contact-media{
+    /* background-color: #f38155; */
+    justify-items: center;
+    padding: 20%;
+    font-size: 20px;
+    text-align: center;
+}
+
+.contact-media iframe{
+    width: 100%;
+    height: auto;
+    background-color: #011936;
+    margin: 20px 0 0 0;
+    display: grid;
+    min-height: 300px;
+    min-width: 230px;
+}
+
+.sect_2 .contact-forms{
+        /* background-color: rgb(196, 209, 221); */
+        font-size: 1.1em;
+        margin-bottom: 20px;
+}
+
+.contact-forms form legend{
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    color: rgb(15, 15, 238);
+    background-color: white;
+    font-size: 1.5em;
+    font-family: 'Lucida Sans','Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.contact-forms input[type="text"],input[type="email"]{
+    padding: 10px;
+    border-radius: 50px;
+    display: grid;
+    width: 55%;
+    margin-left: 10px;
+
+}
+
+ 
+.contact-forms fieldset{
+    margin-left: 20px;
+    padding-left: 2%;
+    /* display: grid;  */
+}
+
+.contact-forms input[type="radio"]{
+    height: 20px;
+    width: 20px;
+    margin: 5px;
+    margin-bottom: 20px;
+}
+
+.contact-forms input[type="submit"]{
+    padding: 10px;
+    width: 62%;
+    margin: 25px 0 10px 70px;
+    background-color: rgba(49, 80, 202, 0.9);
+    color: white;  
+    transition: 0.5s;
+    /* border-radius: 30px; */
+
+}
+
+.contact-forms input[type="submit"]:hover{
+    background-color:  rgba(170, 248, 170,0.9);
+    color: black;
+    font-size: 1.1em;
+}
+
+.contact-forms textarea{
+    margin: 10px;
+    width: 90%;
+}
+
+.contact-forms input[type="checkbox"]{
+
+        padding: 300px;
+        width: 20px;
+        height: 20px;
+}
+/* 
+.contact-media{
+    order: 2;
+} */
