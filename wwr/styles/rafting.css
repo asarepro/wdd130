@@ -281,21 +281,34 @@ div figcaption{
     min-height: 300px;
     min-width: 230px;
 }
+.section-1 .heading{
+    position: absolute;
+    top: 500px;
 
+}
 .sect_2 .contact-forms{
         /* background-color: rgb(196, 209, 221); */
         font-size: 1.1em;
         margin-bottom: 20px;
 }
 
-.contact-forms form legend{
+.contact-forms form .heading{
     text-align: center;
     margin-bottom: 20px;
+    position: relative;
+    top: -0px;
     padding: 20px;
     color: rgb(15, 15, 238);
     background-color: white;
     font-size: 1.5em;
     font-family: 'Lucida Sans','Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.heading_3 {
+    text-align: center;
+    margin: 70px 0 20px 0;
+    color: rgb(22, 22, 173);
+    font-size: 3.2em;
 }
 
 .contact-forms input[type="text"],input[type="email"]{
