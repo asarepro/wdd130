@@ -253,6 +253,12 @@ nav, p, section, article {
 } */
 
 
+.sect_1 h2{
+    font-size: 2.5em;
+    padding: 20px 0;
+    margin-bottom: 50px;
+}
+
 div figcaption{
     text-align: center;
 }
