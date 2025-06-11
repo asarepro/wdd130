@@ -548,7 +548,7 @@ div figcaption{
 
 section .trip-header{
     text-align: center;
-    font-size: 1.4em;
+    font-size: 1.8em;
 
 }
 
@@ -561,11 +561,11 @@ section .trip-header{
     font-size: 1.3em;
     font-weight: 500;
 }
-
-.trip-main-header h2{
+ 
+ .trip-main-header{
     text-align: center;
     font-size: 2.5em;
     margin: 30px 0 150px 0 ;
-    font-weight: 500;
+    font-weight: 500; */
     font-family: Arial, Helvetica, sans-serif;
 }
